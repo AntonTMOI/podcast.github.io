@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Syncopate:wght@400;700&display=swap');
+
+*   {
+    box-sizing: border-box;
+}
+
+html    {
+    scroll-behavior: smooth;
+}
+
+@-ms-viewport {width: device-width;} 
+
+@viewport {width: device-width;}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body    {
+    background-color: #3E4048;
+    font-family: 'Montserrat', sans-serif;
+    color: #DFDFDF;
+    overflow-x: hidden;
+}
+
+a button:hover  {
+    background-color: #00FED4;
+    transition: 0.5s;
+}
+
+.logo   {
+    width: 250px;
+}
+
+ol, ul  {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 700;
+    align-items: center;
+}
+
+ul  {
+    width: 75%;
+    margin: auto;
+}
+
+ol a, ul a    {
+    color: #AAB7BC;
+    text-decoration: none;
+}
+
+ol a:hover, ul a:hover  {
+    color: #58D6C1;
+    transition: 0.5s;
+}
+
+nav {
+    width: 60%;
+}
+
+header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    z-index: 99;
+    background-color: #3E4048;
+    width: 100%;
+}
+
+h1  {
+    font-family: 'Syncopate', sans-serif;
+    margin: 0;
+    color: #58D6C1;
+    font-size: 2.3rem;
+}
+
+h2  {
+    font-family: 'Syncopate', sans-serif;
+    margin: 0;
+    color: #58D6C1;
+    font-size: 6rem;
+    font-weight: 500;
+    margin-top: 3rem;
+}
+
+summary, h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.grafiken   {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 6rem;
+}
+
+details {
+    background-color: #6B6F7C;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.headline   {
+    width: 75%;
+    margin-left: auto;
+}
+
+p   {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+button  {
+    padding: 1rem;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    background-color: #58D6C1;
+    color: #6B6F7C;
+    margin-bottom: 1rem;
+}
+
+.button2    {
+    width: 150px;
+    background-color: #727684;
+    color: #DFDFDF;
+}
+
+.buttons    {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+a .button2:hover    {
+    background-color: #A4A8B5;
+}
+
+.hero_background    {
+    background-image: url(../bilder/keyvisual_balken_klein.png);
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 5.5rem
+}
+
+.hero   {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    padding-bottom: 8rem;
+}
+
+.hero div   {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(../bilder/stuhl);
+    background-size: cover;
+    background-position: right;
+}
+
+.hero aside {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: #6B6F7C;
+    padding: 2rem;
+}
+
+.produktion {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+.produktion div {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-image: url(../bilder/produktion);
+    background-size: cover;
+    background-position: right;
+}
+
+.produktion aside   {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #6B6F7C;
+    padding: 2rem;
+}
+
+.beratung   {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 200px;
+    margin-left: auto;
+}
+
+.beratung_Background   {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(../bilder/beratung);
+    background-size: cover;
+}
+
+.beratung aside {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: #6B6F7C;
+    padding: 2rem;
+    z-index: 98;
+}
+
+.name   {
+    width: 100%;
+    height: 37px;
+    background-color: #969DAF;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+textarea    {
+    width: 100%;
+    background-color: #969DAF;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.beratung_background    {
+    background-image: url(../bilder/keyvisual_balken_big.png);
+    background-position: right;
+}
+
+details>summary::-webkit-details-marker {
+  display: none;
+}
+
+details>summary::before {
+  content: '+ ';
+  color: #DFDFDF;
+}
+
+details[open]>summary::before {
+  content: '- ';
+}
+
+details[open]>summary {
+  margin-bottom: 0.5rem;
+}
+
+footer  {
+    background-color: #6B6F7C;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.pfeil  {
+    width: 40px;
+}
+
+.img-slider {
+    position: relative;
+    width: 75%;
+    height: 600px;
+    margin-left: auto;
+    margin-bottom: 6rem;
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+.img-slider .slide  {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.img-slider .slide.active  {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: 2s;
+}
+
+.img-slider .slide .galerie  {
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+.column {
+    background-image: url(../bilder/galerie_column);
+}
+
+.kunst  {
+    background-image: url(../bilder/galerie_kunst);
+}
+
+.bank   {
+    background-image: url(../bilder/galerie_bank);
+}
+
+.haus   {
+    background-image: url(../bilder/galerie_haus);
+}
+
+.wand   {
+    background-image: url(../bilder/galerie_office);
+}
+
+.img-slider .slide .info    {
+    position: absolute;
+    top: 0;
+    margin: 30px 30px;
+    background-color: #6B6F7C;
+    padding: 2rem;
+}
+
+.img-slider .dots   {
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-slider .dots .single   {
+    background: #3E4048;
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img-slider .dots .single.active    {
+    background: #58D6C1;
+}
+
+ol li img   {
+    width: 30px;
+}
+
+
+
+@media only screen and (max-width: 920px)   {
+    
+    h1  {
+        font-size: 2rem;
+    }
+    
+    h2  {
+        font-size: 3rem;
+    }
+    
+    h3,summary  {
+        font-size: 1.2rem;
+    }
+    
+    p   {
+        font-size: 1rem;
+    }
+    
+    .headline   {
+        width: 100%;
+    }
+    
+    .hero   {
+        width: 100%;
+        grid-template-rows: 200px 1fr 1fr;
+    }
+
+    .hero div   {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .hero aside {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    
+    .img-slider {
+        width: 100%;
+    }
+    
+    .produktion {
+        width: 100%;
+        grid-template-rows: 200px 1fr 1fr;
+    }
+
+    .produktion div {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .produktion aside   {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    
+    .beratung   {
+        width: 100%;
+        grid-template-rows: 100px 1fr 200px;
+    }
+
+    .beratung_Background   {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .beratung aside {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    
+    button  {
+        width: 170px;
+    }
+    
+    .logo   {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    header  {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+    
+    .line   {
+        width: 30px;
+        height: 2px;
+        background-color: #AAB7BC;
+        margin: 5px;
+    }
+    
+    nav {
+        width: 100%;
+        position: relative;
+    }
+    
+    .hamburger  {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: -150%;
+        transform: translate(-5%, -230%);
+    }
+    
+    ol  {
+        position: fixed;
+        height: 40vw;
+        width: 100%;
+        background-color: #3E4048;
+        z-index: 3;
+        margin: 0;
+        flex-direction: column;
+        justify-content:space-around;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all 1s ease-out;
+    }
+    
+    ol.open {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+}
+
+@media only screen and (max-width: 475px)   {
+    h1  {
+        font-size: 1.5rem;
+    }
+    
+    h2  {
+        font-size: 2.3rem;
+    }
+    
+    h3, summary  {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 380px)   {
+    .hero   {
+        width: 100%;
+        grid-template-columns: 20px 1fr 20px;
+    }
+
+    .hero aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+    .img-slider {
+        width: 100%;
+    }
+    
+    .produktion {
+        grid-template-columns: 20px 1fr 20px;
+    }
+
+    .produktion aside   {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+    .beratung   {
+        grid-template-columns: 20px 1fr 20px;
+    }
+
+    .beratung aside {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+}
+
+@media only screen and (max-width: 350px)   {
+    h2  {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 350px)   {
+    h1  {
+        font-size: 1rem;
+    }
+    
+    h2  {
+        font-size: 1.2rem;
+    }
+    
+    h3, summary  {
+        font-size: 0.9rem;
+    }
+    
+    p   {
+        font-size: 0.8rem;
+    }
+}
